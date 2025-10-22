@@ -28,15 +28,6 @@ This replaces passwords with cryptographic wallet signatures, ensuring **decentr
 
 ---
 
-## 🧰 Tech Stack
-
-**Frontend:** React.js / Next.js + Ethers.js (or your custom wallet)  
-**Backend:** Node.js + Express  
-**Database:** MongoDB / Redis (for nonces + sessions)  
-**Auth:** JWT (JSON Web Tokens)  
-**Blockchain:** Ethereum ECDSA Signatures  
----
-
 
 ## 🧾 API Endpoints
 
@@ -73,18 +64,6 @@ This replaces passwords with cryptographic wallet signatures, ensuring **decentr
 
 ---
 
-## 🔒 Security Considerations
-
-✅ **One-time Nonce:** immediately invalidated after use  
-✅ **Nonce Expiry:** short TTL (5–10 mins)  
-✅ **Contextual Message:** includes domain + address + timestamp  
-✅ **HTTPS:** mandatory for all requests  
-✅ **JWT Security:** use HttpOnly, Secure, SameSite cookies if storing in browser  
-✅ **Rate Limiting:** to avoid brute-force  
-✅ **Replay Protection:** invalidates reused or expired nonce  
-
----
-
 ## 🌱 Future Enhancements
 
 - Multi-chain support (Polygon, BSC, etc.)  
@@ -106,12 +85,3 @@ This replaces passwords with cryptographic wallet signatures, ensuring **decentr
 ## 📄 License
 
 This project is licensed under the **MIT License** — see the LICENSE file for details.
-
----
-
-## 🙏 Acknowledgements
-
-- [Ethers.js](https://docs.ethers.io/)  
-- [Express.js](https://expressjs.com/)  
-- [JWT.io](https://jwt.io/)  
-- Inspired by **SIWE (Sign-In With Ethereum)** protocol
